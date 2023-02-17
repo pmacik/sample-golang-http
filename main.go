@@ -7,7 +7,7 @@ import (
 
 func main() {
 	http.HandleFunc("/", HelloServer)
-	fmt.Printf("Listening on port %d... \n", 8080)
+	fmt.Println("Listening on port 8080")
 	http.ListenAndServe(":8080", nil)
 }
 func HelloServer(w http.ResponseWriter, r *http.Request) {
